@@ -4,6 +4,8 @@ Moderna in odzivna predstavitvena spletna stran (landing page) za **Videocenter 
 
 Domena produkcije: **[videocenter-koper.web.app](https://videocenter-koper.web.app/)**
 
+[![Firebase Hosting Deploy](https://github.com/EricStojko/Videocenter/actions/workflows/firebase-deploy.yml/badge.svg)](https://github.com/EricStojko/Videocenter/actions/workflows/firebase-deploy.yml)
+
 ---
 
 ## 🛠️ Tech Stack & Arhitektura
