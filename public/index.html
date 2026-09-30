@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Videocenter Koper – Digitalizacija videokastet | VHS na USB</title>
+    <title>Videocenter Koper – Digitalizacija videokaset | VHS na USB</title>
     <meta name="description"
         content="Rešite svoje družinske spomine! Zanesljiva digitalizacija VHS, VHS-C, MiniDV, Hi8 in Video8 na USB ključek ali DVD. Brez presenečenj – plačate le dejansko dolžino posnetka. Kosovelov trg 1, Koper." />
 
+    <meta name="keywords"
+        content="digitalizacija videokaset, presnemavanje VHS, VHS na USB Koper, MiniDV na USB, Hi8 presnemavanje, Video8 digitalizacija, Videocenter Koper, Obala, Kosovelov trg" />
     <!-- Canonical & hreflang -->
     <link rel="canonical" href="https://videocenter-koper.web.app/" />
     <link rel="alternate" hreflang="sl" href="https://videocenter-koper.web.app/" />
@@ -19,17 +21,17 @@
     <meta property="og:url" content="https://videocenter-koper.web.app/" />
     <meta property="og:site_name" content="Videocenter Koper" />
     <meta property="og:locale" content="sl_SI" />
-    <meta property="og:title" content="Videocenter Koper – Digitalizacija videokastet | VHS na USB" />
+    <meta property="og:title" content="Videocenter Koper – Digitalizacija videokaset | VHS na USB" />
     <meta property="og:description"
         content="Rešite svoje družinske spomine! Zanesljiva digitalizacija VHS, VHS-C, MiniDV, Hi8 in Video8 na USB ključek ali DVD. Kosovelov trg 1, Koper." />
     <meta property="og:image" content="https://videocenter-koper.web.app/vhs_hero.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="VHS kaseta in USB ključek – digitalizacija videokastet Koper" />
+    <meta property="og:image:alt" content="VHS kaseta in USB ključek – digitalizacija videokaset Koper" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Videocenter Koper – Digitalizacija videokastet | VHS na USB" />
+    <meta name="twitter:title" content="Videocenter Koper – Digitalizacija videokaset | VHS na USB" />
     <meta name="twitter:description"
         content="Rešite svoje družinske spomine! VHS, VHS-C, MiniDV, Hi8 in Video8 na USB ali DVD. Koper, Kosovelov trg 1." />
     <meta name="twitter:image" content="https://videocenter-koper.web.app/vhs_hero.jpg" />
@@ -38,1075 +40,135 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <style>
-        /* =========================================
-       DESIGN TOKENS
-    ========================================= */
-        :root {
-            --white: #FFFFFF;
-            --charcoal: #2B2B2B;
-            --red: #C1272D;
-            --red-dark: #9e1f24;
-            --yellow: #F9E04B;
-            --orange: #E85D04;
-            --orange-dark: #bf4d03;
-            --gray-50: #F9F9F9;
-            --gray-100: #F2F2F2;
-            --gray-200: #E5E5E5;
-            --gray-400: #9CA3AF;
-            --gray-600: #6B7280;
-            --green: #16A34A;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, .08);
-            --shadow-md: 0 4px 16px rgba(0, 0, 0, .10);
-            --shadow-lg: 0 8px 32px rgba(0, 0, 0, .14);
-            --radius: 12px;
-            --radius-sm: 8px;
-            --transition: 0.25s ease;
-        }
-
-        /* =========================================
-       RESET & BASE
-    ========================================= */
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            color: var(--charcoal);
-            background: var(--white);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1140px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* =========================================
-       TOP BAR
-    ========================================= */
-        .top-bar {
-            background: var(--charcoal);
-            color: var(--white);
-            padding: 10px 0;
-            font-size: 0.8rem;
-            letter-spacing: 0.02em;
-        }
-
-        .top-bar .container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .top-bar a {
-            color: var(--gray-200);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            transition: color var(--transition);
-        }
-
-        .top-bar a:hover {
-            color: var(--yellow);
-        }
-
-        .top-bar i {
-            font-size: 0.75rem;
-        }
-
-        .lang-switcher {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-weight: 600;
-            margin-left: 8px;
-        }
-
-        .lang-switcher span {
-            color: var(--gray-400);
-        }
-
-        .lang-switcher a {
-            color: var(--gray-200);
-            padding: 2px 6px;
-            border-radius: 4px;
-            transition: background var(--transition), color var(--transition);
-        }
-
-        .lang-switcher a.active,
-        .lang-switcher a:hover {
-            background: var(--red);
-            color: var(--white);
-        }
-
-        /* =========================================
-       HEADER / NAV
-    ========================================= */
-        header {
-            background: var(--white);
-            border-bottom: 1px solid var(--gray-200);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .header-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 14px 0;
-            gap: 16px;
-        }
-
-        .logo-wrap {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-wrap img {
-            height: 80px;
-            width: auto;
-        }
-
-        /* Fallback logo text if image missing */
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.15;
-        }
-
-        .logo-text .brand {
-            font-size: 1.25rem;
-            font-weight: 800;
-            color: var(--red);
-            letter-spacing: -0.02em;
-        }
-
-        .logo-text .sub {
-            font-size: 0.7rem;
-            font-weight: 500;
-            color: var(--gray-600);
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 28px;
-        }
-
-        nav a {
-            font-size: 0.88rem;
-            font-weight: 500;
-            color: var(--charcoal);
-            padding: 4px 0;
-            border-bottom: 2px solid transparent;
-            transition: color var(--transition), border-color var(--transition);
-        }
-
-        nav a:hover {
-            color: var(--red);
-            border-bottom-color: var(--red);
-        }
-
-        /* =========================================
-       HERO
-    ========================================= */
-        .hero {
-            background: linear-gradient(135deg, #fafafa 0%, #fff8f8 50%, #fff 100%);
-            padding: 72px 0 80px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(ellipse at 80% 50%, rgba(193, 39, 45, 0.05) 0%, transparent 65%);
-            pointer-events: none;
-        }
-
-        .hero-inner {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 64px;
-            align-items: center;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--yellow);
-            color: var(--charcoal);
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 6px 14px;
-            border-radius: 100px;
-            margin-bottom: 20px;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-        }
-
-        .hero-badge i {
-            font-size: 0.7rem;
-        }
-
-        .hero h1 {
-            font-size: clamp(1.9rem, 3.5vw, 2.9rem);
-            font-weight: 900;
-            line-height: 1.15;
-            letter-spacing: -0.03em;
-            color: var(--charcoal);
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: var(--red);
-        }
-
-        .hero-sub {
-            font-size: 1.05rem;
-            color: var(--gray-600);
-            line-height: 1.7;
-            margin-bottom: 36px;
-            max-width: 480px;
-        }
-
-        .hero-ctas {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            font-family: inherit;
-            font-weight: 700;
-            font-size: 0.95rem;
-            padding: 14px 28px;
-            border-radius: 100px;
-            border: none;
-            cursor: pointer;
-            transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-        }
-
-        .btn-primary {
-            background: var(--orange);
-            color: var(--white);
-            box-shadow: 0 4px 20px rgba(232, 93, 4, 0.35);
-        }
-
-        .btn-primary:hover {
-            background: var(--orange-dark);
-            box-shadow: 0 6px 28px rgba(232, 93, 4, 0.45);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--red);
-            border: 2px solid var(--red);
-        }
-
-        .btn-outline:hover {
-            background: var(--red);
-            color: var(--white);
-        }
-
-        .hero-trust {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 24px;
-            font-size: 0.82rem;
-            color: var(--gray-600);
-        }
-
-        .hero-trust i {
-            color: var(--green);
-        }
-
-        /* Hero Image Side */
-        .hero-visual {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-img-wrap {
-            position: relative;
-            width: 100%;
-            max-width: 480px;
-            aspect-ratio: 4/3;
-            background: linear-gradient(135deg, var(--gray-100) 0%, var(--gray-50) 100%);
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-img-wrap img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            padding: 16px;
-        }
-
-        .hero-float-card {
-            position: absolute;
-            bottom: -16px;
-            left: -20px;
-            background: var(--white);
-            border-radius: var(--radius);
-            padding: 14px 18px;
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            color: var(--charcoal);
-            border: 1px solid var(--gray-100);
-        }
-
-        .hero-float-card .icon-circle {
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            background: var(--yellow);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            flex-shrink: 0;
-        }
-
-        .hero-float-card .label {
-            font-size: 0.7rem;
-            color: var(--gray-600);
-            font-weight: 400;
-        }
-
-        /* =========================================
-       SECTION COMMONS
-    ========================================= */
-        section {
-            padding: 80px 0;
-        }
-
-        .section-tag {
-            display: inline-block;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--red);
-            background: rgba(193, 39, 45, 0.07);
-            padding: 4px 12px;
-            border-radius: 100px;
-            margin-bottom: 16px;
-        }
-
-        .section-title {
-            font-size: clamp(1.6rem, 2.8vw, 2.2rem);
-            font-weight: 800;
-            letter-spacing: -0.025em;
-            line-height: 1.2;
-            color: var(--charcoal);
-            margin-bottom: 12px;
-        }
-
-        .section-desc {
-            font-size: 1rem;
-            color: var(--gray-600);
-            max-width: 560px;
-            line-height: 1.7;
-            margin-bottom: 48px;
-        }
-
-        /* =========================================
-       FORMATS SECTION
-    ========================================= */
-        .formats-section {
-            background: var(--gray-50);
-        }
-
-        .formats-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-            max-width: 820px;
-            margin: 0 auto;
-        }
-
-        .formats-card {
-            background: var(--white);
-            border-radius: var(--radius);
-            padding: 32px 28px;
-            box-shadow: var(--shadow-md);
-            border: 1px solid var(--gray-100);
-            transition: transform var(--transition), box-shadow var(--transition);
-        }
-
-        .formats-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .formats-card.accept {
-            border-top: 4px solid var(--red);
-        }
-
-        .formats-card.reject {
-            border-top: 4px solid var(--gray-200);
-        }
-
-        .formats-card-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 22px;
-        }
-
-        .formats-icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-        }
-
-        .accept .formats-icon {
-            background: rgba(193, 39, 45, 0.1);
-            color: var(--red);
-        }
-
-        .reject .formats-icon {
-            background: var(--gray-100);
-            color: var(--gray-600);
-        }
-
-        .formats-card-header h3 {
-            font-size: 1rem;
-            font-weight: 700;
-        }
-
-        .formats-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .formats-list li {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-
-        .formats-list li i {
-            font-size: 0.85rem;
-            width: 20px;
-            text-align: center;
-            flex-shrink: 0;
-        }
-
-        .formats-list.yes li i {
-            color: var(--green);
-        }
-
-        .formats-list.no li i {
-            color: var(--gray-400);
-        }
-
-        .formats-list.no li {
-            color: var(--gray-400);
-        }
-
-        .formats-note {
-            margin-top: 14px;
-            font-size: 0.78rem;
-            color: var(--gray-400);
-            font-style: italic;
-        }
-
-        /* =========================================
-       HOW IT WORKS (STEPS)
-    ========================================= */
-        .steps-section {
-            background: var(--white);
-        }
-
-        .steps-header {
-            text-align: center;
-        }
-
-        .steps-header .section-desc {
-            margin: 0 auto 56px;
-        }
-
-        .steps-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 0;
-            position: relative;
-        }
-
-        .steps-grid::before {
-            content: '';
-            position: absolute;
-            top: 44px;
-            left: calc(16.6% + 24px);
-            right: calc(16.6% + 24px);
-            height: 2px;
-            background: linear-gradient(90deg, var(--red), var(--orange));
-            z-index: 0;
-        }
-
-        .step-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 0 24px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .step-number-wrap {
-            position: relative;
-            margin-bottom: 24px;
-        }
-
-        .step-icon {
-            width: 88px;
-            height: 88px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            margin: 0 auto;
-            transition: transform var(--transition);
-        }
-
-        .step-card:nth-child(1) .step-icon {
-            background: rgba(193, 39, 45, 0.08);
-            color: var(--red);
-        }
-
-        .step-card:nth-child(2) .step-icon {
-            background: rgba(232, 93, 4, 0.08);
-            color: var(--orange);
-        }
-
-        .step-card:nth-child(3) .step-icon {
-            background: rgba(22, 163, 74, 0.08);
-            color: var(--green);
-        }
-
-        .step-card:hover .step-icon {
-            transform: scale(1.08);
-        }
-
-        .step-number {
-            position: absolute;
-            top: -4px;
-            right: -4px;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background: var(--charcoal);
-            color: var(--white);
-            font-size: 0.68rem;
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .step-card h3 {
-            font-size: 1rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: var(--charcoal);
-        }
-
-        .step-card p {
-            font-size: 0.9rem;
-            color: var(--gray-600);
-            line-height: 1.6;
-        }
-
-        .step-card .step-location {
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            margin-top: 10px;
-            font-size: 0.78rem;
-            font-weight: 600;
-            color: var(--orange);
-            background: rgba(232, 93, 4, 0.07);
-            padding: 4px 10px;
-            border-radius: 100px;
-        }
-
-        /* =========================================
-       PRICING
-    ========================================= */
-        .pricing-section {
-            background: var(--gray-50);
-        }
-
-        .pricing-inner {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .pricing-card {
-            background: var(--white);
-            border-radius: 20px;
-            box-shadow: var(--shadow-lg);
-            overflow: hidden;
-            border: 1px solid var(--gray-100);
-        }
-
-        .pricing-card-header {
-            background: linear-gradient(135deg, var(--red) 0%, #a01e24 100%);
-            padding: 36px 40px;
-            color: var(--white);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .pricing-card-header::before {
-            content: '';
-            position: absolute;
-            top: -40px;
-            right: -40px;
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.06);
-        }
-
-        .pricing-card-header::after {
-            content: '';
-            position: absolute;
-            bottom: -60px;
-            left: -20px;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.04);
-        }
-
-        .pricing-card-header h3 {
-            font-size: 1rem;
-            font-weight: 500;
-            opacity: 0.85;
-            margin-bottom: 10px;
-            letter-spacing: 0.05em;
-        }
-
-        .price-amount {
-            font-size: clamp(3rem, 6vw, 4.5rem);
-            font-weight: 900;
-            letter-spacing: -0.04em;
-            line-height: 1;
-        }
-
-        .price-unit {
-            font-size: 1.1rem;
-            font-weight: 400;
-            opacity: 0.8;
-            margin-top: 6px;
-        }
-
-        .pricing-card-body {
-            padding: 36px 40px;
-        }
-
-        .pricing-features {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            margin-bottom: 32px;
-        }
-
-        .pricing-features li {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        .pricing-features li i {
-            color: var(--green);
-            font-size: 0.85rem;
-            margin-top: 3px;
-            flex-shrink: 0;
-        }
-
-        .discount-badge {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            background: linear-gradient(135deg, var(--yellow) 0%, #f5d800 100%);
-            border-radius: var(--radius-sm);
-            padding: 16px 20px;
-            margin-bottom: 28px;
-        }
-
-        .discount-badge i {
-            font-size: 1.3rem;
-            color: var(--charcoal);
-        }
-
-        .discount-badge p {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--charcoal);
-            line-height: 1.4;
-        }
-
-        .pricing-cta {
-            width: 100%;
-            justify-content: center;
-            font-size: 1rem;
-            padding: 16px;
-        }
-
-        /* =========================================
-       FOOTER / CONTACT
-    ========================================= */
-        .contact-section {
-            background: var(--charcoal);
-            color: var(--white);
-            padding: 80px 0 0;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.6fr;
-            gap: 56px;
-            margin-bottom: 56px;
-        }
-
-        .contact-info h2 {
-            font-size: 1.7rem;
-            font-weight: 800;
-            letter-spacing: -0.025em;
-            margin-bottom: 16px;
-            color: var(--white);
-        }
-
-        .contact-info p.intro {
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.65);
-            line-height: 1.7;
-            margin-bottom: 32px;
-        }
-
-        .contact-detail {
-            display: flex;
-            align-items: flex-start;
-            gap: 14px;
-            margin-bottom: 20px;
-        }
-
-        .contact-detail-icon {
-            width: 42px;
-            height: 42px;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.08);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            font-size: 1rem;
-            color: var(--yellow);
-        }
-
-        .contact-detail div {
-            flex: 1;
-        }
-
-        .contact-detail .label {
-            font-size: 0.72rem;
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.45);
-            margin-bottom: 2px;
-        }
-
-        .contact-detail .value {
-            font-size: 0.95rem;
-            font-weight: 500;
-            color: var(--white);
-        }
-
-        .contact-detail a.value:hover {
-            color: var(--yellow);
-        }
-
-        .hours-box {
-            background: rgba(249, 224, 75, 0.1);
-            border: 1px solid rgba(249, 224, 75, 0.25);
-            border-radius: var(--radius-sm);
-            padding: 16px 18px;
-            margin-top: 24px;
-        }
-
-        .hours-box .hours-title {
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--yellow);
-            margin-bottom: 6px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .hours-box p {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.5;
-        }
-
-        .map-wrap {
-            border-radius: var(--radius);
-            overflow: hidden;
-            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
-            border: 3px solid rgba(255, 255, 255, 0.08);
-            min-height: 340px;
-        }
-
-        .map-wrap iframe {
-            width: 100%;
-            height: 380px;
-            display: block;
-            border: 0;
-        }
-
-        /* Footer Bottom */
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 24px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .footer-bottom p {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.4);
-        }
-
-        .footer-bottom a {
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        .footer-bottom a:hover {
-            color: var(--yellow);
-        }
-
-        .footer-brand {
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: var(--red);
-        }
-
-        /* =========================================
-       SCROLL REVEAL ANIMATION
-    ========================================= */
-        .reveal {
-            opacity: 0;
-            transform: translateY(28px);
-            transition: opacity 0.55s ease, transform 0.55s ease;
-        }
-
-        .reveal.visible {
-            opacity: 1;
-            transform: none;
-        }
-
-        .reveal-delay-1 {
-            transition-delay: 0.1s;
-        }
-
-        .reveal-delay-2 {
-            transition-delay: 0.2s;
-        }
-
-        .reveal-delay-3 {
-            transition-delay: 0.3s;
-        }
-
-        /* =========================================
-       MOBILE RESPONSIVENESS
-    ========================================= */
-        @media (max-width: 900px) {
-            .hero-inner {
-                grid-template-columns: 1fr;
-                gap: 48px;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /></noscript>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Schema.org LocalBusiness & Service Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://videocenter-koper.web.app/#organization",
+      "name": "Videocenter Koper",
+      "alternateName": "Videocenter",
+      "description": "Zanesljiva in strokovna digitalizacija analognih videokaset (VHS, VHS-C, MiniDV, Hi8, Video8) na USB ključek ali DVD v Kopru in na Obali.",
+      "url": "https://videocenter-koper.web.app/",
+      "logo": "https://videocenter-koper.web.app/logo.png",
+      "image": "https://videocenter-koper.web.app/vhs_hero.jpg",
+      "telephone": "+38631625040",
+      "email": "videocenter.kp@gmail.com",
+      "priceRange": "€€",
+      "paymentAccepted": "Gotovina",
+      "currenciesAccepted": "EUR",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kosovelov trg 1 (Pralnica Speed Queen)",
+        "addressLocality": "Koper",
+        "postalCode": "6000",
+        "addressCountry": "SI"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.5483,
+        "longitude": 13.7302
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "21:00"
+        }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Koper" },
+        { "@type": "City", "name": "Izola" },
+        { "@type": "City", "name": "Piran" },
+        { "@type": "City", "name": "Portorož" },
+        { "@type": "AdministrativeArea", "name": "Obalno-kraška regija" },
+        { "@type": "City", "name": "Trst / Trieste" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Storitve digitalizacije videoposnetkov",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digitalizacija VHS kaset na USB ali DVD",
+              "description": "Presnemavanje klasičnih VHS videokaset na sodoben digitalni format."
             }
-
-            .hero-visual {
-                order: -1;
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digitalizacija VHS-C in MiniDV kaset",
+              "description": "Presnemavanje kamkorderskih kaset VHS-C in MiniDV."
             }
-
-            .hero-img-wrap {
-                max-width: 400px;
-                margin: 0 auto;
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digitalizacija Hi8 in Video8 kaset",
+              "description": "Presnemavanje 8mm analognih videokaset Video8 in Hi8."
             }
-
-            .hero-float-card {
-                left: auto;
-                right: 10px;
-                bottom: -12px;
-            }
-
-            .steps-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .steps-grid::before {
-                display: none;
-            }
-
-            .step-card {
-                align-items: flex-start;
-                text-align: left;
-                flex-direction: row;
-                gap: 20px;
-            }
-
-            .step-icon {
-                width: 64px;
-                height: 64px;
-                font-size: 1.4rem;
-                flex-shrink: 0;
-                margin: 0;
-            }
-
-            .step-number-wrap {
-                margin-bottom: 0;
-            }
-
-            .formats-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            nav {
-                display: none;
-            }
-
-            .logo-wrap img {
-                height: 56px;
-            }
+          }
+        ]
+      }
+    }
+    </script>
+    <!-- Schema.org FAQPage Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kaj če je trak strgan, zmečkan ali poškodovan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Brez skrbi. Pred začetkom vsako kaseto skrbno pregledamo. V kolikor je trak pretrgan, odlepljen ali se je zaskočilo ohišje, ga v našem studiu strokovno popravimo in zalepimo, da rešimo vaše dragocene družinske posnetke."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ali moram prinesti svoj USB ključek ali ga priskrbite vi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Obe možnosti sta na voljo! Lahko prinesete svoj prazen USB ključek ali zunanji disk, lahko pa nov, zanesljiv USB ključek kupite neposredno pri nas ob prevzemu. Če želite, vam posnetke z veseljem zapečemo tudi na DVD."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kako dolgo traja postopek digitalizacije?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Manjša naročila (1 do 3 kasete) so običajno zaključena v roku 2 do 4 delovnih dni. Pri večjih družinskih arhivih se o točnem roku dogovorimo ob oddaji. Takoj ko je naročilo pripravljeno za prevzem, vas obvestimo s klicem ali SMS sporočilom."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kakšna je končna kakovost posnetka in v katerem formatu ga prejmem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uporabljamo profesionalno opremo z napredno stabilizacijo signala, ki iz vašega traku izvleče najboljšo možno sliko in zvok. Posnetke prejmete v standardnem MP4 formatu (H.264), ki ga enostavno predvajate na pametnih TV-jih, računalnikih, telefonih in tablicah."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kje točno in kdaj lahko oddam kasete na Kosovelovem trgu 1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Naša sprejemna točka se nahaja v poslovalnici Pralnice Speed Queen na Kosovelovem trgu 1 v Kopru. Kasete lahko oddate vsak dan med 8:00 in 21:00 (tudi ob sobotah in nedeljah) neposredno pri osebju na blagajni. Predhodna naročitev ni potrebna."
+          }
         }
-
-        @media (max-width: 600px) {
-            section {
-                padding: 60px 0;
-            }
-
-            .hero {
-                padding: 48px 0 60px;
-            }
-
-            .hero h1 {
-                font-size: 1.7rem;
-            }
-
-            .hero-ctas {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .btn {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .top-bar .container {
-                justify-content: center;
-                gap: 12px;
-            }
-
-            .pricing-card-header,
-            .pricing-card-body {
-                padding: 28px 24px;
-            }
-
-            .hero-float-card {
-                display: none;
-            }
-
-            .contact-section {
-                padding: 60px 0 0;
-            }
-        }
-    </style>
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -1116,11 +178,11 @@
   ============================= -->
     <div class="top-bar" role="banner">
         <div class="container">
-            <a href="#" id="tb-phone">
-                <i class="fa-solid fa-phone"></i>
+            <a href="tel:+38631625040" id="tb-phone" aria-label="Pokličite nas na +386 31 625 040">
+                <i class="fa-solid fa-phone"></i> <span class="contact-text">+386 31 625 040</span>
             </a>
-            <a href="#" id="tb-email">
-                <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:videocenter.kp@gmail.com" id="tb-email" aria-label="Pišite nam na videocenter.kp@gmail.com">
+                <i class="fa-solid fa-envelope"></i> <span class="contact-text">videocenter.kp@gmail.com</span>
             </a>
             <nav class="lang-switcher" aria-label="Izbira jezika">
                 <a href="index.html" class="active" aria-label="Slovenščina" id="lang-sl">SL</a>
@@ -1137,8 +199,11 @@
         <div class="container">
             <div class="header-inner">
                 <a href="index.html" class="logo-wrap" aria-label="Videocenter Koper – Domov">
-                    <img src="logo.png" alt="Videocenter Koper"
-                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                    <picture>
+                        <source srcset="logo.webp" type="image/webp" />
+                        <img src="logo.png" alt="Videocenter Koper" width="200" height="50"
+                            onerror="this.style.display='none';this.closest('.logo-wrap').querySelector('.logo-text').style.display='flex'" />
+                    </picture>
                     <div class="logo-text" style="display:none">
                         <span class="brand">Videocenter</span>
                         <span class="sub">Koper</span>
@@ -1148,6 +213,7 @@
                     <a href="#formats">Kaj sprejemamo</a>
                     <a href="#steps">Kako deluje</a>
                     <a href="#pricing">Cenik</a>
+                    <a href="#faq">Vprašanja</a>
                     <a href="#contact">Kontakt</a>
                 </nav>
             </div>
@@ -1194,8 +260,11 @@
                 <!-- Image Side -->
                 <div class="hero-visual">
                     <div class="hero-img-wrap">
-                        <img src="vhs_hero.jpg" alt="VHS kaseta prenesena na USB ključek – digitalizacija spominov"
-                            id="hero-img" />
+                        <picture>
+                            <source srcset="vhs_hero.webp" type="image/webp" />
+                            <img src="vhs_hero.jpg" alt="VHS kaseta in USB ključek – digitalizacija videokaset Koper"
+                                id="hero-img" width="1600" height="896" fetchpriority="high" loading="eager" />
+                        </picture>
                     </div>
                     <div class="hero-float-card">
                         <div class="icon-circle">🎞️</div>
@@ -1218,7 +287,7 @@
                 <span class="section-tag">Podprti formati</span>
                 <h2 class="section-title" id="formats-heading">Kaj sprejemamo?</h2>
                 <p class="section-desc" style="margin:0 auto 48px;">Digitaliziramo najpogostejše formate domačih
-                    videokastet. Preverite, ali vaša kaseta ustreza spodnjim pogojem.</p>
+                    videokaset. Preverite, ali vaša kaseta ustreza spodnjim pogojem.</p>
             </div>
             <div class="formats-grid">
                 <!-- Accept -->
@@ -1251,6 +320,37 @@
                         <li><i class="fa-solid fa-xmark-circle"></i> Stari filmski trakovi (8mm film)</li>
                     </ul>
                     <p class="formats-note">Za ostale formate žal nismo opremljeni. Hvala za razumevanje.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+       ZAUPANJE IN VARNOST
+  ============================= -->
+    <section class="trust-banner-section" aria-label="Zaupanje in varnost vaših posnetkov">
+        <div class="container">
+            <div class="trust-banner-grid">
+                <div class="trust-item reveal">
+                    <div class="trust-icon"><i class="fa-solid fa-lock"></i></div>
+                    <div class="trust-text">
+                        <h4>100% Zasebnost in diskretnost</h4>
+                        <p>Vaši družinski posnetki so popolnoma varni. Posnetkov ne gledamo, ne hranimo in ne delimo z nikomer.</p>
+                    </div>
+                </div>
+                <div class="trust-item reveal reveal-delay-1">
+                    <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="trust-text">
+                        <h4>Skrbno ravnanje s trakovi</h4>
+                        <p>Zavedamo se neprecenljive vrednosti vaših spominov. S kasetami ravnamo previdno in profesionalno.</p>
+                    </div>
+                </div>
+                <div class="trust-item reveal reveal-delay-2">
+                    <div class="trust-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="trust-text">
+                        <h4>Lokalna obdelava v Kopru</h4>
+                        <p>Vse presnemavamo lokalno v lastnem studiu. Originalni trakovi nikoli ne zapustijo Obale.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1372,6 +472,70 @@
     </section>
 
     <!-- ============================
+       POGOSTA VPRAŠANJA (FAQ)
+  ============================= -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+        <div class="container faq-container">
+            <div class="reveal" style="text-align:center;">
+                <span class="section-tag">Odgovori na vprašanja</span>
+                <h2 class="section-title" id="faq-heading">Pogosta vprašanja</h2>
+                <p class="section-desc" style="margin: 0 auto 36px;">Vse, kar morate vedeti o varnem postopku digitalizacije vaših kaset.</p>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item reveal">
+                    <summary class="faq-question">
+                        <span>Kaj če je trak strgan, zmečkan ali poškodovan?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Brez skrbi. Pred začetkom vsako kaseto skrbno pregledamo. V kolikor je trak pretrgan, odlepljen ali se je zaskočilo ohišje, ga v našem studiu strokovno popravimo in zalepimo, da rešimo vaše dragocene družinske posnetke.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item reveal reveal-delay-1">
+                    <summary class="faq-question">
+                        <span>Ali moram prinesti svoj USB ključek ali ga priskrbite vi?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Obe možnosti sta na voljo! Lahko prinesete svoj prazen USB ključek ali zunanji disk, lahko pa nov, zanesljiv USB ključek kupite neposredno pri nas ob prevzemu. Če želite, vam posnetke z veseljem zapečemo tudi na DVD.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item reveal reveal-delay-2">
+                    <summary class="faq-question">
+                        <span>Kako dolgo traja postopek digitalizacije?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Manjša naročila (1 do 3 kasete) so običajno zaključena v roku 2 do 4 delovnih dni. Pri večjih družinskih arhivih se o točnem roku dogovorimo ob oddaji. Takoj ko je naročilo pripravljeno za prevzem, vas obvestimo s klicem ali SMS sporočilom.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item reveal">
+                    <summary class="faq-question">
+                        <span>Kakšna je končna kakovost posnetka in v katerem formatu ga prejmem?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Uporabljamo profesionalno opremo z napredno stabilizacijo signala, ki iz vašega traku izvleče najboljšo možno sliko in zvok. Posnetke prejmete v standardnem MP4 formatu (H.264), ki ga enostavno predvajate na pametnih TV-jih, računalnikih, telefonih in tablicah.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item reveal reveal-delay-1">
+                    <summary class="faq-question">
+                        <span>Kje točno in kdaj lahko oddam kasete na Kosovelovem trgu 1?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Naša sprejemna točka se nahaja v poslovalnici <strong>Pralnice Speed Queen na Kosovelovem trgu 1 v Kopru</strong>. Kasete lahko oddate vsak dan med <strong>8:00 in 21:00</strong> (tudi ob sobotah in nedeljah) neposredno pri osebju na blagajni. Predhodna naročitev ni potrebna.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
        FOOTER / KONTAKT
   ============================= -->
     <footer class="contact-section" id="contact" aria-labelledby="contact-heading">
@@ -1399,7 +563,7 @@
                         <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
                         <div>
                             <div class="label">Telefon</div>
-                            <a href="#" id="ft-phone" class="value"></a>
+                            <a href="tel:+38631625040" id="ft-phone" class="value" itemprop="telephone">+386 31 625 040</a>
                         </div>
                     </div>
 
@@ -1407,8 +571,19 @@
                         <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
                         <div>
                             <div class="label">E-pošta</div>
-                            <a href="#" id="ft-email" class="value"></a>
+                            <a href="mailto:videocenter.kp@gmail.com" id="ft-email" class="value" itemprop="email">videocenter.kp@gmail.com</a>
                         </div>
+                    </div>
+
+                    <div class="chat-actions">
+                        <a href="https://wa.me/38631625040?text=Pozdravljeni%2C%20zanima%20me%20digitalizacija%20videokaset."
+                            class="btn-chat btn-whatsapp" target="_blank" rel="noopener" aria-label="Pišite nam na WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp sporočilo
+                        </a>
+                        <a href="viber://chat?number=%2B38631625040"
+                            class="btn-chat btn-viber" aria-label="Pišite nam na Viber">
+                            <i class="fa-brands fa-viber"></i> Viber sporočilo
+                        </a>
                     </div>
 
                     <div class="hours-box">
@@ -1496,6 +671,22 @@
 
         });
     </script>
+    <!-- ============================
+       FLOATING QUICK-CHAT WIDGET
+  ============================= -->
+    <div class="floating-chat-container" role="region" aria-label="Hitri kontakt">
+        <a href="https://wa.me/38631625040?text=Pozdravljeni%2C%20zanima%20me%20digitalizacija%20videokaset."
+            class="floating-chat-btn whatsapp-float" target="_blank" rel="noopener" aria-label="Pišite nam preko WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="chat-tooltip">WhatsApp</span>
+        </a>
+        <a href="viber://chat?number=%2B38631625040"
+            class="floating-chat-btn viber-float" aria-label="Pišite nam preko Viber">
+            <i class="fa-brands fa-viber"></i>
+            <span class="chat-tooltip">Viber</span>
+        </a>
+    </div>
+
 </body>
 
 </html>
