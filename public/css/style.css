@@ -1179,6 +1179,10 @@
             background-color: #7360F2;
         }
 
+        .btn-facebook {
+            background-color: #1877F2;
+        }
+
         /* Floating Quick-Chat Container */
         .floating-chat-container {
             position: fixed;
