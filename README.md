@@ -2,7 +2,7 @@
 
 Moderna in odzivna predstavitvena spletna stran (landing page) za **Videocenter Koper** – zanesljiva digitalizacija analognih videokaset (VHS, VHS-C, MiniDV, Hi8, Video8) na USB ključek ali DVD.
 
-Domena produkcije: **[videocenter-koper.web.app](https://videocenter-koper.web.app/)**
+Domena produkcije: **[video-center.si](https://video-center.si/)** *(sekundarna: [videocenter-koper.web.app](https://videocenter-koper.web.app/))*
 
 [![Firebase Hosting Deploy](https://github.com/EricStojko/Videocenter/actions/workflows/firebase-deploy.yml/badge.svg)](https://github.com/EricStojko/Videocenter/actions/workflows/firebase-deploy.yml)
 
