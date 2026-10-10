@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Videocenter Koper – Digitalizacija videokaset | VHS na USB</title>
     <meta name="description"
-        content="Rešite svoje družinske spomine! Zanesljiva digitalizacija VHS, VHS-C, MiniDV, Hi8 in Video8 na USB ključek ali DVD. Brez presenečenj – plačate le dejansko dolžino posnetka. Kosovelov trg 1, Koper." />
+        content="Zanesljiva digitalizacija VHS, VHS-C, MiniDV, Hi8 in Video8 kaset na USB ključek ali DVD v Kopru. Plačate le dejansko dolžino posnetka. Kosovelov trg 1." />
 
     <meta name="keywords"
-        content="digitalizacija videokaset, presnemavanje VHS, VHS na USB Koper, MiniDV na USB, Hi8 presnemavanje, Video8 digitalizacija, Videocenter Koper, Obala, Kosovelov trg" />
+        content="digitalizacija videokaset, presnemavanje VHS, VHS na USB Koper, MiniDV na USB, Hi8 presnemavanje, Video8 digitalizacija, Videocenter Koper, Obala, Kosovelov trg, Izola, Piran, Portorož" />
     <!-- Canonical & hreflang -->
     <link rel="canonical" href="https://video-center.si/" />
     <link rel="alternate" hreflang="sl" href="https://video-center.si/" />
@@ -23,8 +23,8 @@
     <meta property="og:locale" content="sl_SI" />
     <meta property="og:title" content="Videocenter Koper – Digitalizacija videokaset | VHS na USB" />
     <meta property="og:description"
-        content="Rešite svoje družinske spomine! Zanesljiva digitalizacija VHS, VHS-C, MiniDV, Hi8 in Video8 na USB ključek ali DVD. Kosovelov trg 1, Koper." />
-    <meta property="og:image" content="https://video-center.si/vhs_hero.jpg" />
+        content="Zanesljiva digitalizacija VHS, VHS-C, MiniDV, Hi8 in Video8 kaset na USB ključek ali DVD v Kopru. Plačate le dejansko dolžino posnetka. Kosovelov trg 1." />
+    <meta property="og:image" content="https://video-center.si/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="VHS kaseta in USB ključek – digitalizacija videokaset Koper" />
@@ -33,8 +33,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Videocenter Koper – Digitalizacija videokaset | VHS na USB" />
     <meta name="twitter:description"
-        content="Rešite svoje družinske spomine! VHS, VHS-C, MiniDV, Hi8 in Video8 na USB ali DVD. Koper, Kosovelov trg 1." />
-    <meta name="twitter:image" content="https://video-center.si/vhs_hero.jpg" />
+        content="Zanesljiva digitalizacija VHS, VHS-C, MiniDV, Hi8 in Video8 kaset na USB ključek ali DVD v Kopru. Plačate le dejansko dolžino posnetka." />
+    <meta name="twitter:image" content="https://video-center.si/og-image.jpg" />
 
     <!-- Favicon & App Icons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -62,12 +62,13 @@
       "description": "Zanesljiva in strokovna digitalizacija analognih videokaset (VHS, VHS-C, MiniDV, Hi8, Video8) na USB ključek ali DVD v Kopru in na Obali.",
       "url": "https://video-center.si/",
       "logo": "https://video-center.si/logo.png",
-      "image": "https://video-center.si/vhs_hero.jpg",
+      "image": "https://video-center.si/og-image.jpg",
       "telephone": "+38631625040",
       "email": "videocenter.kp@gmail.com",
       "priceRange": "€€",
       "paymentAccepted": "Gotovina",
       "currenciesAccepted": "EUR",
+      "hasMap": "https://maps.google.com/?q=Kosovelov+trg+1+Koper",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Kosovelov trg 1 (Pralnica Speed Queen)",
@@ -184,16 +185,16 @@
     <!-- ============================
        TOP BAR
   ============================= -->
-    <div class="top-bar" role="banner">
+    <div class="top-bar" role="region" aria-label="Hitri kontakt">
         <div class="container">
-            <a href="tel:+38631625040" id="tb-phone" aria-label="Pokličite nas na +386 31 625 040">
+            <a href="tel:+38631625040" id="tb-phone">
                 <i class="fa-solid fa-phone"></i> <span class="contact-text">+386 31 625 040</span>
             </a>
-            <a href="mailto:videocenter.kp@gmail.com" id="tb-email" aria-label="Pišite nam na videocenter.kp@gmail.com">
+            <a href="mailto:videocenter.kp@gmail.com" id="tb-email">
                 <i class="fa-solid fa-envelope"></i> <span class="contact-text">videocenter.kp@gmail.com</span>
             </a>
             <nav class="lang-switcher" aria-label="Izbira jezika">
-                <a href="index.html" class="active" aria-label="Slovenščina" id="lang-sl">SL</a>
+                <a href="/" class="active" aria-label="Slovenščina" id="lang-sl">SL</a>
                 <span aria-hidden="true">|</span>
                 <a href="it.html" aria-label="Italiano" id="lang-it">IT</a>
             </nav>
@@ -206,7 +207,7 @@
     <header role="banner">
         <div class="container">
             <div class="header-inner">
-                <a href="index.html" class="logo-wrap" aria-label="Videocenter Koper – Domov">
+                <a href="/" class="logo-wrap" aria-label="Videocenter Koper – Domov">
                     <picture>
                         <source srcset="logo.webp" type="image/webp" />
                         <img src="logo.png" alt="Videocenter Koper" width="200" height="50"
@@ -228,6 +229,8 @@
         </div>
     </header>
 
+    <main id="main-content">
+
     <!-- ============================
        HERO
   ============================= -->
@@ -241,8 +244,9 @@
                         VHS → USB · Digitalizacija
                     </div>
                     <h1 id="hero-heading">
+                        <span class="hero-kicker">Digitalizacija videokaset v Kopru</span>
                         Rešite svoje<br />
-                        <span>družinske spomine,</span><br />
+                        <span class="highlight">družinske spomine,</span><br />
                         preden za vedno zbledijo.
                     </h1>
                     <p class="hero-sub">
@@ -543,6 +547,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- ============================
        FOOTER / KONTAKT
   ============================= -->
@@ -554,7 +560,8 @@
                     <h2 id="contact-heading">Kontakt &amp; Lokacija</h2>
                     <p class="intro">
                         Kasete oddajte osebno – ni potrebna predhodna naročitev. Preprosto pridite in oddajte
-                        kasete pri osebju pralnice.
+                        kasete pri osebju pralnice. Sprejemna točka v središču Kopra je enostavno dostopna za vso Obalo
+                        (Koper, Izola, Piran, Portorož, Lucija in Ankaran).
                     </p>
 
                     <div class="contact-detail">
@@ -612,7 +619,7 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p>&copy; 2025 <span class="footer-brand">Videocenter Koper</span>. Vse pravice pridržane.</p>
+                <p>&copy; 2026 <span class="footer-brand">Videocenter Koper</span>. Vse pravice pridržane.</p>
                 <p>Sprejemna točka: <a href="https://maps.google.com/?q=Kosovelov+trg+1+Koper" target="_blank"
                         rel="noopener">Pralnica Speed Queen, Kosovelov trg 1, Koper</a></p>
             </div>
@@ -626,7 +633,7 @@
         document.addEventListener('DOMContentLoaded', function () {
 
             /* ------------------------------------------
-               CONTACT INFO (obfuscated – anti-scraping)
+               CONTACT INFO (ensure tel and mailto links)
             ------------------------------------------ */
             var p1 = '+386 31'; var p2 = ' 625'; var p3 = ' 040';
             var phone = p1 + p2 + p3;
@@ -639,12 +646,10 @@
             var tbPhone = document.getElementById('tb-phone');
             if (tbPhone) {
                 tbPhone.href = 'tel:' + phoneTel;
-                tbPhone.innerHTML += ' ' + phone;
             }
             var tbEmail = document.getElementById('tb-email');
             if (tbEmail) {
                 tbEmail.href = 'mailto:' + email;
-                tbEmail.innerHTML += ' ' + email;
             }
 
             /* Footer */

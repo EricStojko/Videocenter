@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Videocenter Koper – Digitalizzazione Videocassette | VHS su USB</title>
     <meta name="description"
-        content="Salva i tuoi ricordi di famiglia! Digitalizzazione affidabile di VHS, VHS-C, MiniDV, Hi8 e Video8 su chiavetta USB o DVD. Paghi solo la durata effettiva. Kosovelov trg 1, Koper." />
+        content="Digitalizzazione affidabile di VHS, VHS-C, MiniDV, Hi8 e Video8 su chiavetta USB o DVD a Capodistria. Pagate solo la durata effettiva. Kosovelov trg 1." />
 
     <meta name="keywords"
-        content="digitalizzazione videocassette, riversamento VHS, VHS su USB Capodistria, MiniDV su USB, Hi8 riversamento, Video8 digitale, Videocenter Capodistria, Trieste, Litorale" />
+        content="digitalizzazione videocassette, riversamento VHS, VHS su USB Capodistria, MiniDV su USB, Hi8 riversamento, Video8 digitale, Videocenter Capodistria, Trieste, Muggia, Litorale" />
     <!-- Canonical & hreflang -->
     <link rel="canonical" href="https://video-center.si/it.html" />
     <link rel="alternate" hreflang="sl" href="https://video-center.si/" />
@@ -23,8 +23,8 @@
     <meta property="og:locale" content="it_IT" />
     <meta property="og:title" content="Videocenter Koper – Digitalizzazione Videocassette | VHS su USB" />
     <meta property="og:description"
-        content="Salva i tuoi ricordi di famiglia! Digitalizzazione affidabile di VHS, VHS-C, MiniDV, Hi8 e Video8 su chiavetta USB o DVD. Kosovelov trg 1, Koper." />
-    <meta property="og:image" content="https://video-center.si/vhs_hero.jpg" />
+        content="Digitalizzazione affidabile di VHS, VHS-C, MiniDV, Hi8 e Video8 su chiavetta USB o DVD a Capodistria. Pagate solo la durata effettiva. Kosovelov trg 1." />
+    <meta property="og:image" content="https://video-center.si/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Videocassetta e chiavetta USB – digitalizzazione videocassette Koper" />
@@ -33,8 +33,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Videocenter Koper – Digitalizzazione Videocassette | VHS su USB" />
     <meta name="twitter:description"
-        content="Salva i tuoi ricordi! VHS, VHS-C, MiniDV, Hi8 e Video8 su USB o DVD. Koper, Kosovelov trg 1." />
-    <meta name="twitter:image" content="https://video-center.si/vhs_hero.jpg" />
+        content="Digitalizzazione affidabile di VHS, VHS-C, MiniDV, Hi8 e Video8 su chiavetta USB o DVD a Capodistria. Pagate solo la durata effettiva." />
+    <meta name="twitter:image" content="https://video-center.si/og-image.jpg" />
 
     <!-- Favicon & App Icons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -62,12 +62,13 @@
       "description": "Digitalizzazione affidabile e professionale di videocassette analogiche (VHS, VHS-C, MiniDV, Hi8, Video8) su chiavetta USB o DVD a Capodistria e Trieste.",
       "url": "https://video-center.si/it.html",
       "logo": "https://video-center.si/logo.png",
-      "image": "https://video-center.si/vhs_hero.jpg",
+      "image": "https://video-center.si/og-image.jpg",
       "telephone": "+38631625040",
       "email": "videocenter.kp@gmail.com",
       "priceRange": "€€",
       "paymentAccepted": "Contanti",
       "currenciesAccepted": "EUR",
+      "hasMap": "https://maps.google.com/?q=Kosovelov+trg+1+Koper",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Kosovelov trg 1 (Lavanderia Speed Queen)",
@@ -184,16 +185,16 @@
     <!-- ============================
        TOP BAR
   ============================= -->
-    <div class="top-bar" role="banner">
+    <div class="top-bar" role="region" aria-label="Contatto rapido">
         <div class="container">
-            <a href="tel:+38631625040" id="tb-phone" aria-label="Chiamaci al +386 31 625 040">
+            <a href="tel:+38631625040" id="tb-phone">
                 <i class="fa-solid fa-phone"></i> <span class="contact-text">+386 31 625 040</span>
             </a>
-            <a href="mailto:videocenter.kp@gmail.com" id="tb-email" aria-label="Scrivici a videocenter.kp@gmail.com">
+            <a href="mailto:videocenter.kp@gmail.com" id="tb-email">
                 <i class="fa-solid fa-envelope"></i> <span class="contact-text">videocenter.kp@gmail.com</span>
             </a>
             <nav class="lang-switcher" aria-label="Selezione lingua">
-                <a href="index.html" aria-label="Slovenščina" id="lang-sl">SL</a>
+                <a href="/" aria-label="Slovenščina" id="lang-sl">SL</a>
                 <span aria-hidden="true">|</span>
                 <a href="it.html" class="active" aria-label="Italiano" id="lang-it">IT</a>
             </nav>
@@ -207,8 +208,11 @@
         <div class="container">
             <div class="header-inner">
                 <a href="it.html" class="logo-wrap" aria-label="Videocenter Koper – Home">
-                    <img src="logo.png" alt="Videocenter Koper"
-                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                    <picture>
+                        <source srcset="logo.webp" type="image/webp" />
+                        <img src="logo.png" alt="Videocenter Koper" width="200" height="50"
+                            onerror="this.style.display='none';this.closest('.logo-wrap').querySelector('.logo-text').style.display='flex'" />
+                    </picture>
                     <div class="logo-text" style="display:none">
                         <span class="brand">Videocenter</span>
                         <span class="sub">Koper</span>
@@ -224,6 +228,8 @@
         </div>
     </header>
 
+    <main id="main-content">
+
     <!-- ============================
        HERO
   ============================= -->
@@ -237,8 +243,9 @@
                         VHS → USB · Digitalizzazione
                     </div>
                     <h1 id="hero-heading">
+                        <span class="hero-kicker">Digitalizzazione videocassette a Capodistria</span>
                         Salva i tuoi<br />
-                        <span>ricordi di famiglia</span><br />
+                        <span class="highlight">ricordi di famiglia</span><br />
                         prima che svaniscano per sempre.
                     </h1>
                     <p class="hero-sub">
@@ -265,9 +272,12 @@
                 <!-- Image Side -->
                 <div class="hero-visual">
                     <div class="hero-img-wrap">
-                        <img src="vhs_hero.jpg"
-                            alt="Videocassetta trasferita su chiavetta USB – digitalizzazione dei ricordi"
-                            id="hero-img" />
+                        <picture>
+                            <source srcset="vhs_hero.webp" type="image/webp" />
+                            <img src="vhs_hero.jpg"
+                                alt="Videocassetta trasferita su chiavetta USB – digitalizzazione dei ricordi"
+                                id="hero-img" width="1600" height="896" fetchpriority="high" loading="eager" />
+                        </picture>
                     </div>
                     <div class="hero-float-card">
                         <div class="icon-circle">🎞️</div>
@@ -541,6 +551,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- ============================
        FOOTER / CONTATTI
   ============================= -->
@@ -552,7 +564,8 @@
                     <h2 id="contact-heading">Contatti &amp; Posizione</h2>
                     <p class="intro">
                         Consegnate le cassette di persona – non è necessaria una prenotazione. Venite e consegnate
-                        le cassette al personale della lavanderia.
+                        le cassette al personale della lavanderia. Il punto di raccolta nel centro di Capodistria è
+                        comodamente e rapidamente accessibile anche da Trieste e Muggia.
                     </p>
 
                     <div class="contact-detail">
@@ -610,7 +623,7 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p>&copy; 2025 <span class="footer-brand">Videocenter Koper</span>. Tutti i diritti riservati.</p>
+                <p>&copy; 2026 <span class="footer-brand">Videocenter Koper</span>. Tutti i diritti riservati.</p>
                 <p>Punto di raccolta: <a href="https://maps.google.com/?q=Kosovelov+trg+1+Koper" target="_blank"
                         rel="noopener">Lavanderia Speed Queen, Kosovelov trg 1, Koper</a></p>
             </div>
@@ -624,7 +637,7 @@
         document.addEventListener('DOMContentLoaded', function () {
 
             /* ------------------------------------------
-               CONTACT INFO (obfuscated – anti-scraping)
+               CONTACT INFO (ensure tel and mailto links)
             ------------------------------------------ */
             var p1 = '+386 31'; var p2 = ' 625'; var p3 = ' 040';
             var phone = p1 + p2 + p3;
@@ -637,12 +650,10 @@
             var tbPhone = document.getElementById('tb-phone');
             if (tbPhone) {
                 tbPhone.href = 'tel:' + phoneTel;
-                tbPhone.innerHTML += ' ' + phone;
             }
             var tbEmail = document.getElementById('tb-email');
             if (tbEmail) {
                 tbEmail.href = 'mailto:' + email;
-                tbEmail.innerHTML += ' ' + email;
             }
 
             /* Footer */

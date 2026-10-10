@@ -249,7 +249,18 @@
             margin-bottom: 20px;
         }
 
-        .hero h1 span {
+        .hero-kicker {
+            display: block;
+            font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--red);
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span.highlight,
+        .hero h1 span:not(.hero-kicker) {
             color: var(--red);
         }
 
@@ -910,11 +921,11 @@
 
         .footer-bottom p {
             font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.4);
+            color: rgba(255, 255, 255, 0.72);
         }
 
         .footer-bottom a {
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.88);
         }
 
         .footer-bottom a:hover {
@@ -924,7 +935,7 @@
         .footer-brand {
             font-size: 0.9rem;
             font-weight: 700;
-            color: var(--red);
+            color: var(--yellow);
         }
 
         /* =========================================
